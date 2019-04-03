@@ -1,0 +1,5 @@
+**/db
+**/incremental_db
+*.bak
+**/output_files
+tags
