@@ -2,4 +2,5 @@
 **/incremental_db
 *.bak
 **/output_files
+**/simulation
 tags
