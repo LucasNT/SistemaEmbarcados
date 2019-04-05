@@ -1,12 +1,9 @@
 module mulMatrix(
-	input [149:0] A,
-	input [89:0] B,
+	input wire [149:0] A,
+	input wire [89:0] B,
 	output wire [224:0] C,
 	input clk);
 
-	reg [1:0] contador;
-	reg [2:0] contadorLinha;
-	reg [1:0] contadorColuna;
 	reg [14:0] D1[0:4][0:2];
 	reg [14:0] D2[0:4][0:2];
 	reg [14:0] A1[0:4][0:1];
@@ -33,7 +30,7 @@ module mulMatrix(
         end
         for( i = 0 ; i < 5 ; i= i+1) begin
             for(j = 0 ; j < 3 ; j= j+1) begin
-                D2[i][j] <= D1[i][j] + P1[i][1] * P2[1][j];
+                D2[i][j] <= D1[i][j] + P1[i] * P2[j];
             end
         end
 	end
