@@ -3,5 +3,6 @@
 *.bak
 **/output_files
 **/simulation
+**/*.qws
 tags
 **/mulMatrix_nativelink_simulation.rpt
