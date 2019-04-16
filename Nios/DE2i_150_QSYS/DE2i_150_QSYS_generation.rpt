@@ -1,0 +1,251 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/lucas/Quartus/Nios/DE2i_150_QSYS.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation --family="Cyclone IV GX" --part=EP4CGX150DF31C7
+Progress: Loading Nios/DE2i_150_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led [altera_avalon_pio 18.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_qsys [altera_nios2_qsys 16.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2i_150_QSYS.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: DE2i_150_QSYS.nios2_qsys: Nios II Classic cores are no longer recommended for new projects
+Info: DE2i_150_QSYS.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE2i_150_QSYS.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: DE2i_150_QSYS: Generating DE2i_150_QSYS "DE2i_150_QSYS" for SIM_VERILOG
+Info: jtag_uart: Starting RTL generation for module 'DE2i_150_QSYS_jtag_uart'
+Info: jtag_uart:   Generation command is [exec /opt/altera/18.1/quartus/linux64/perl/bin/perl -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2i_150_QSYS_jtag_uart --dir=/tmp/alt7991_2460458530418563486.dir/0002_jtag_uart_gen/ --quartus_dir=/opt/altera/18.1/quartus --verilog --config=/tmp/alt7991_2460458530418563486.dir/0002_jtag_uart_gen//DE2i_150_QSYS_jtag_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7991_2460458530418563486.dir/0002_jtag_uart_gen/  ]
+Info: jtag_uart: Done RTL generation for module 'DE2i_150_QSYS_jtag_uart'
+Info: jtag_uart: "DE2i_150_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: led: Starting RTL generation for module 'DE2i_150_QSYS_led'
+Info: led:   Generation command is [exec /opt/altera/18.1/quartus/linux64/perl/bin/perl -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2i_150_QSYS_led --dir=/tmp/alt7991_2460458530418563486.dir/0003_led_gen/ --quartus_dir=/opt/altera/18.1/quartus --verilog --config=/tmp/alt7991_2460458530418563486.dir/0003_led_gen//DE2i_150_QSYS_led_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7991_2460458530418563486.dir/0003_led_gen/  ]
+Info: led: Done RTL generation for module 'DE2i_150_QSYS_led'
+Info: led: "DE2i_150_QSYS" instantiated altera_avalon_pio "led"
+Info: nios2_qsys: Starting RTL generation for module 'DE2i_150_QSYS_nios2_qsys'
+Info: nios2_qsys:   Generation command is [exec /opt/altera/18.1/quartus/linux64/eperlcmd -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=DE2i_150_QSYS_nios2_qsys --dir=/tmp/alt7991_2460458530418563486.dir/0004_nios2_qsys_gen/ --quartus_bindir=/opt/altera/18.1/quartus/linux64 --verilog --config=/tmp/alt7991_2460458530418563486.dir/0004_nios2_qsys_gen//DE2i_150_QSYS_nios2_qsys_processor_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7991_2460458530418563486.dir/0004_nios2_qsys_gen/  ]
+Info: nios2_qsys: # 2019.04.05 15:55:50 (*) Starting Nios II generation
+Info: nios2_qsys: # 2019.04.05 15:55:50 (*)   Checking for plaintext license.
+Info: nios2_qsys: # 2019.04.05 15:55:50 (*)   Couldn't query license setup in Quartus directory /opt/altera/18.1/quartus/linux64
+Info: nios2_qsys: # 2019.04.05 15:55:50 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2019.04.05 15:55:50 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys: # 2019.04.05 15:55:50 (*)   Plaintext license not found.
+Info: nios2_qsys: # 2019.04.05 15:55:50 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)   Couldn't query license setup in Quartus directory /opt/altera/18.1/quartus/linux64
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)   Creating all objects for CPU
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)     Testbench
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)     Instruction decoding
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)       Instruction fields
+Info: nios2_qsys: # 2019.04.05 15:55:51 (*)       Instruction decodes
+Info: nios2_qsys: # 2019.04.05 15:55:52 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys: # 2019.04.05 15:55:52 (*)       Instruction controls
+Info: nios2_qsys: # 2019.04.05 15:55:52 (*)     Pipeline frontend
+Info: nios2_qsys: # 2019.04.05 15:55:52 (*)     Pipeline backend
+Info: nios2_qsys: # 2019.04.05 15:55:54 (*)   Creating '/tmp/alt7991_2460458530418563486.dir/0004_nios2_qsys_gen//DE2i_150_QSYS_nios2_qsys_nios2_waves.do'
+Info: nios2_qsys: # 2019.04.05 15:55:54 (*)   Generating RTL from CPU objects
+Info: nios2_qsys: # 2019.04.05 15:55:57 (*)   Creating encrypted RTL
+Info: nios2_qsys: # 2019.04.05 15:55:57 (*)   Creating IP functional simulation model
+Info: nios2_qsys: # 2019.04.05 15:56:21 (*) Done Nios II generation
+Info: nios2_qsys: Done RTL generation for module 'DE2i_150_QSYS_nios2_qsys'
+Info: nios2_qsys: "DE2i_150_QSYS" instantiated altera_nios2_qsys "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'DE2i_150_QSYS_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec /opt/altera/18.1/quartus/linux64/perl/bin/perl -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2i_150_QSYS_onchip_memory2 --dir=/tmp/alt7991_2460458530418563486.dir/0005_onchip_memory2_gen/ --quartus_dir=/opt/altera/18.1/quartus --verilog --config=/tmp/alt7991_2460458530418563486.dir/0005_onchip_memory2_gen//DE2i_150_QSYS_onchip_memory2_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7991_2460458530418563486.dir/0005_onchip_memory2_gen/  ]
+Info: onchip_memory2: Done RTL generation for module 'DE2i_150_QSYS_onchip_memory2'
+Info: onchip_memory2: "DE2i_150_QSYS" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: sysid_qsys: "DE2i_150_QSYS" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "DE2i_150_QSYS" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "DE2i_150_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "DE2i_150_QSYS" instantiated altera_reset_controller "rst_controller"
+Info: nios2_qsys_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: nios2_qsys_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: nios2_qsys_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_qsys_data_master_limiter"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: DE2i_150_QSYS: Done "DE2i_150_QSYS" with 29 modules, 62 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/lucas/Quartus/Nios/DE2i_150_QSYS/DE2i_150_QSYS.spd --output-directory=/home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/lucas/Quartus/Nios/DE2i_150_QSYS/DE2i_150_QSYS.spd --output-directory=/home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	28 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/lucas/Quartus/Nios/DE2i_150_QSYS/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/lucas/Quartus/Nios/DE2i_150_QSYS.qsys --block-symbol-file --output-directory=/home/lucas/Quartus/Nios/DE2i_150_QSYS --family="Cyclone IV GX" --part=EP4CGX150DF31C7
+Progress: Loading Nios/DE2i_150_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led [altera_avalon_pio 18.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_qsys [altera_nios2_qsys 16.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2i_150_QSYS.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: DE2i_150_QSYS.nios2_qsys: Nios II Classic cores are no longer recommended for new projects
+Info: DE2i_150_QSYS.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE2i_150_QSYS.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/lucas/Quartus/Nios/DE2i_150_QSYS.qsys --synthesis=VERILOG --output-directory=/home/lucas/Quartus/Nios/DE2i_150_QSYS/synthesis --family="Cyclone IV GX" --part=EP4CGX150DF31C7
+Progress: Loading Nios/DE2i_150_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led [altera_avalon_pio 18.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_qsys [altera_nios2_qsys 16.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2i_150_QSYS.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: DE2i_150_QSYS.nios2_qsys: Nios II Classic cores are no longer recommended for new projects
+Info: DE2i_150_QSYS.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE2i_150_QSYS.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: DE2i_150_QSYS: Generating DE2i_150_QSYS "DE2i_150_QSYS" for QUARTUS_SYNTH
+Info: jtag_uart: Starting RTL generation for module 'DE2i_150_QSYS_jtag_uart'
+Info: jtag_uart:   Generation command is [exec /opt/altera/18.1/quartus/linux64/perl/bin/perl -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2i_150_QSYS_jtag_uart --dir=/tmp/alt7991_2460458530418563486.dir/0029_jtag_uart_gen/ --quartus_dir=/opt/altera/18.1/quartus --verilog --config=/tmp/alt7991_2460458530418563486.dir/0029_jtag_uart_gen//DE2i_150_QSYS_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'DE2i_150_QSYS_jtag_uart'
+Info: jtag_uart: "DE2i_150_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: led: Starting RTL generation for module 'DE2i_150_QSYS_led'
+Info: led:   Generation command is [exec /opt/altera/18.1/quartus/linux64/perl/bin/perl -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2i_150_QSYS_led --dir=/tmp/alt7991_2460458530418563486.dir/0030_led_gen/ --quartus_dir=/opt/altera/18.1/quartus --verilog --config=/tmp/alt7991_2460458530418563486.dir/0030_led_gen//DE2i_150_QSYS_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'DE2i_150_QSYS_led'
+Info: led: "DE2i_150_QSYS" instantiated altera_avalon_pio "led"
+Info: nios2_qsys: Starting RTL generation for module 'DE2i_150_QSYS_nios2_qsys'
+Info: nios2_qsys:   Generation command is [exec /opt/altera/18.1/quartus/linux64/eperlcmd -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /opt/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=DE2i_150_QSYS_nios2_qsys --dir=/tmp/alt7991_2460458530418563486.dir/0031_nios2_qsys_gen/ --quartus_bindir=/opt/altera/18.1/quartus/linux64 --verilog --config=/tmp/alt7991_2460458530418563486.dir/0031_nios2_qsys_gen//DE2i_150_QSYS_nios2_qsys_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2_qsys: # 2019.04.05 15:56:29 (*) Starting Nios II generation
+Info: nios2_qsys: # 2019.04.05 15:56:29 (*)   Checking for plaintext license.
+Info: nios2_qsys: # 2019.04.05 15:56:30 (*)   Couldn't query license setup in Quartus directory /opt/altera/18.1/quartus/linux64
+Info: nios2_qsys: # 2019.04.05 15:56:30 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2019.04.05 15:56:30 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys: # 2019.04.05 15:56:30 (*)   Plaintext license not found.
+Info: nios2_qsys: # 2019.04.05 15:56:30 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)   Couldn't query license setup in Quartus directory /opt/altera/18.1/quartus/linux64
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)   Creating all objects for CPU
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)     Testbench
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)     Instruction decoding
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)       Instruction fields
+Info: nios2_qsys: # 2019.04.05 15:56:31 (*)       Instruction decodes
+Info: nios2_qsys: # 2019.04.05 15:56:32 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys: # 2019.04.05 15:56:32 (*)       Instruction controls
+Info: nios2_qsys: # 2019.04.05 15:56:32 (*)     Pipeline frontend
+Info: nios2_qsys: # 2019.04.05 15:56:32 (*)     Pipeline backend
+Info: nios2_qsys: # 2019.04.05 15:56:34 (*)   Generating RTL from CPU objects
+Info: nios2_qsys: # 2019.04.05 15:56:37 (*)   Creating encrypted RTL
+Info: nios2_qsys: # 2019.04.05 15:56:38 (*) Done Nios II generation
+Info: nios2_qsys: Done RTL generation for module 'DE2i_150_QSYS_nios2_qsys'
+Info: nios2_qsys: "DE2i_150_QSYS" instantiated altera_nios2_qsys "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'DE2i_150_QSYS_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec /opt/altera/18.1/quartus/linux64/perl/bin/perl -I /opt/altera/18.1/quartus/linux64/perl/lib -I /opt/altera/18.1/quartus/sopc_builder/bin/europa -I /opt/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/18.1/quartus/sopc_builder/bin -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2i_150_QSYS_onchip_memory2 --dir=/tmp/alt7991_2460458530418563486.dir/0032_onchip_memory2_gen/ --quartus_dir=/opt/altera/18.1/quartus --verilog --config=/tmp/alt7991_2460458530418563486.dir/0032_onchip_memory2_gen//DE2i_150_QSYS_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'DE2i_150_QSYS_onchip_memory2'
+Info: onchip_memory2: "DE2i_150_QSYS" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: sysid_qsys: "DE2i_150_QSYS" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "DE2i_150_QSYS" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "DE2i_150_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "DE2i_150_QSYS" instantiated altera_reset_controller "rst_controller"
+Info: nios2_qsys_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: nios2_qsys_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: nios2_qsys_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_qsys_data_master_limiter"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/lucas/Quartus/Nios/DE2i_150_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: DE2i_150_QSYS: Done "DE2i_150_QSYS" with 29 modules, 50 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
